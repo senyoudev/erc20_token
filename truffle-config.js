@@ -1,6 +1,6 @@
 
 var HDWalletProvider = require("truffle-hdwallet-provider");
-var mnemonic = "skate paddle milk steak copy barely dwarf echo silver book now pluck";
+var mnemonic = "";
 
 
 module.exports = {
@@ -28,7 +28,7 @@ module.exports = {
   
    goerli: {
       provider: function() { 
-       return new HDWalletProvider(mnemonic, "https://goerli.infura.io/v3/fd8a4679b1ac46b0a2ac96178c6d1d7e");
+       return new HDWalletProvider(mnemonic, "https://goerli.infura.io/v3/your_infura_token");
       },
       network_id: 5,
       timeoutBlocks: 200,
